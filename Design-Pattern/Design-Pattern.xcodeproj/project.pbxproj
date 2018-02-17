@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F45193F7203291140000CD0A /* SportsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45193F6203291140000CD0A /* SportsStore.swift */; };
+		F45193FF203860440000CD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45193FE203860440000CD0A /* AppDelegate.swift */; };
+		F4519401203860440000CD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4519400203860440000CD0A /* ViewController.swift */; };
+		F4519404203860440000CD0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4519402203860440000CD0A /* Main.storyboard */; };
+		F4519406203860440000CD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4519405203860440000CD0A /* Assets.xcassets */; };
+		F4519409203860440000CD0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4519407203860440000CD0A /* LaunchScreen.storyboard */; };
+		F4519415203877120000CD0A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4519414203877120000CD0A /* main.swift */; };
+		F451941A203877310000CD0A /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4519419203877310000CD0A /* Strategy.swift */; };
 		F490B4A32031DFB2006D3D44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490B4A22031DFB2006D3D44 /* main.swift */; };
 		F490B4B02031DFFE006D3D44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490B4AF2031DFFE006D3D44 /* main.swift */; };
 		F490B4B52031E017006D3D44 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490B4B42031E017006D3D44 /* Book.swift */; };
@@ -15,6 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		F4519410203877120000CD0A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		F490B49D2031DFB2006D3D44 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,6 +53,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F45193F6203291140000CD0A /* SportsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsStore.swift; sourceTree = "<group>"; };
+		F45193FC203860440000CD0A /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45193FE203860440000CD0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4519400203860440000CD0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4519403203860440000CD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4519405203860440000CD0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4519408203860440000CD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F451940A203860440000CD0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4519412203877120000CD0A /* Strategy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Strategy; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4519414203877120000CD0A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F4519419203877310000CD0A /* Strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
 		F490B49F2031DFB2006D3D44 /* Design-Pattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Design-Pattern"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F490B4A22031DFB2006D3D44 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F490B4AD2031DFFE006D3D44 /* ObjectPoolPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectPoolPattern; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +74,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F45193F9203860440000CD0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F451940F203877120000CD0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F490B49C2031DFB2006D3D44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,11 +105,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F45193FD203860440000CD0A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F45193FE203860440000CD0A /* AppDelegate.swift */,
+				F4519400203860440000CD0A /* ViewController.swift */,
+				F4519402203860440000CD0A /* Main.storyboard */,
+				F4519405203860440000CD0A /* Assets.xcassets */,
+				F4519407203860440000CD0A /* LaunchScreen.storyboard */,
+				F451940A203860440000CD0A /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F4519413203877120000CD0A /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				F4519414203877120000CD0A /* main.swift */,
+				F4519419203877310000CD0A /* Strategy.swift */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
 		F490B4962031DFB2006D3D44 = {
 			isa = PBXGroup;
 			children = (
 				F490B4A12031DFB2006D3D44 /* Design-Pattern */,
 				F490B4AE2031DFFE006D3D44 /* ObjectPoolPattern */,
+				F45193FD203860440000CD0A /* App */,
+				F4519413203877120000CD0A /* Strategy */,
 				F490B4A02031DFB2006D3D44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +143,8 @@
 			children = (
 				F490B49F2031DFB2006D3D44 /* Design-Pattern */,
 				F490B4AD2031DFFE006D3D44 /* ObjectPoolPattern */,
+				F45193FC203860440000CD0A /* App.app */,
+				F4519412203877120000CD0A /* Strategy */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +164,7 @@
 				F490B4B42031E017006D3D44 /* Book.swift */,
 				F490B4B62031E0F8006D3D44 /* Pool.swift */,
 				F490B4B82031E614006D3D44 /* Library.swift */,
+				F45193F6203291140000CD0A /* SportsStore.swift */,
 			);
 			path = ObjectPoolPattern;
 			sourceTree = "<group>";
@@ -103,6 +172,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F45193FB203860440000CD0A /* App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F451940B203860440000CD0A /* Build configuration list for PBXNativeTarget "App" */;
+			buildPhases = (
+				F45193F8203860440000CD0A /* Sources */,
+				F45193F9203860440000CD0A /* Frameworks */,
+				F45193FA203860440000CD0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = App;
+			productName = App;
+			productReference = F45193FC203860440000CD0A /* App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4519411203877120000CD0A /* Strategy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4519416203877120000CD0A /* Build configuration list for PBXNativeTarget "Strategy" */;
+			buildPhases = (
+				F451940E203877120000CD0A /* Sources */,
+				F451940F203877120000CD0A /* Frameworks */,
+				F4519410203877120000CD0A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Strategy;
+			productName = Strategy;
+			productReference = F4519412203877120000CD0A /* Strategy */;
+			productType = "com.apple.product-type.tool";
+		};
 		F490B49E2031DFB2006D3D44 /* Design-Pattern */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F490B4A62031DFB2006D3D44 /* Build configuration list for PBXNativeTarget "Design-Pattern" */;
@@ -147,6 +250,14 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Pszertlek;
 				TargetAttributes = {
+					F45193FB203860440000CD0A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F4519411203877120000CD0A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					F490B49E2031DFB2006D3D44 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -163,6 +274,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = F490B4962031DFB2006D3D44;
 			productRefGroup = F490B4A02031DFB2006D3D44 /* Products */;
@@ -171,11 +283,44 @@
 			targets = (
 				F490B49E2031DFB2006D3D44 /* Design-Pattern */,
 				F490B4AC2031DFFE006D3D44 /* ObjectPoolPattern */,
+				F45193FB203860440000CD0A /* App */,
+				F4519411203877120000CD0A /* Strategy */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		F45193FA203860440000CD0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4519409203860440000CD0A /* LaunchScreen.storyboard in Resources */,
+				F4519406203860440000CD0A /* Assets.xcassets in Resources */,
+				F4519404203860440000CD0A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		F45193F8203860440000CD0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4519401203860440000CD0A /* ViewController.swift in Sources */,
+				F45193FF203860440000CD0A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F451940E203877120000CD0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4519415203877120000CD0A /* main.swift in Sources */,
+				F451941A203877310000CD0A /* Strategy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F490B49B2031DFB2006D3D44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F490B4B72031E0F8006D3D44 /* Pool.swift in Sources */,
+				F45193F7203291140000CD0A /* SportsStore.swift in Sources */,
 				F490B4B92031E614006D3D44 /* Library.swift in Sources */,
 				F490B4B52031E017006D3D44 /* Book.swift in Sources */,
 				F490B4B02031DFFE006D3D44 /* main.swift in Sources */,
@@ -197,7 +343,83 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		F4519402203860440000CD0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4519403203860440000CD0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4519407203860440000CD0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4519408203860440000CD0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		F451940C203860440000CD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pan.App;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F451940D203860440000CD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pan.App;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4519417203877120000CD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F4519418203877120000CD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		F490B4A42031DFB2006D3D44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -347,6 +569,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F451940B203860440000CD0A /* Build configuration list for PBXNativeTarget "App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F451940C203860440000CD0A /* Debug */,
+				F451940D203860440000CD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4519416203877120000CD0A /* Build configuration list for PBXNativeTarget "Strategy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4519417203877120000CD0A /* Debug */,
+				F4519418203877120000CD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F490B49A2031DFB2006D3D44 /* Build configuration list for PBXProject "Design-Pattern" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

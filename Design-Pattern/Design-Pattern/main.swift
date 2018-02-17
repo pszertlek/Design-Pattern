@@ -10,3 +10,53 @@ import Foundation
 
 print("Hello, World!")
 
+
+let queue = DispatchQueue.init(label: "sss", qos: DispatchQoS.default, attributes: DispatchQueue.Attributes.concurrent)
+
+queue.async {
+    print("1")
+}
+
+queue.async {
+    print("2")
+}
+
+queue.async {
+    print(3)
+}
+
+queue.async {
+    print(4)
+}
+
+queue.async {
+    print("1")
+}
+
+queue.async {
+    print("2")
+}
+
+queue.async {
+    print(3)
+}
+
+queue.async {
+    print(4)
+}
+queue.async {
+    print("1")
+}
+
+queue.async {
+    print("2")
+}
+
+queue.async {
+    print(3)
+}
+
+queue.async {
+    print(4)
+}
+
