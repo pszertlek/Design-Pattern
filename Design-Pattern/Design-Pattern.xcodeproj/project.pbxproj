@@ -15,6 +15,12 @@
 		F4519409203860440000CD0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4519407203860440000CD0A /* LaunchScreen.storyboard */; };
 		F4519415203877120000CD0A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4519414203877120000CD0A /* main.swift */; };
 		F451941A203877310000CD0A /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4519419203877310000CD0A /* Strategy.swift */; };
+		F451942220395ECE0000CD0A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451942120395ECE0000CD0A /* main.swift */; };
+		F451942720395EE50000CD0A /* Employees.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451942620395EE50000CD0A /* Employees.swift */; };
+		F451942920395EF70000CD0A /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451942820395EF60000CD0A /* DataSource.swift */; };
+		F451942B203962270000CD0A /* EmployeeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451942A203962270000CD0A /* EmployeeSearch.swift */; };
+		F451942D203965540000CD0A /* NewCo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451942C203965540000CD0A /* NewCo.swift */; };
+		F451942F203966C60000CD0A /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451942E203966C60000CD0A /* Adapter.swift */; };
 		F490B4A32031DFB2006D3D44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490B4A22031DFB2006D3D44 /* main.swift */; };
 		F490B4B02031DFFE006D3D44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490B4AF2031DFFE006D3D44 /* main.swift */; };
 		F490B4B52031E017006D3D44 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490B4B42031E017006D3D44 /* Book.swift */; };
@@ -24,6 +30,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F4519410203877120000CD0A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F451941D20395ECE0000CD0A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -64,6 +79,13 @@
 		F4519412203877120000CD0A /* Strategy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Strategy; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4519414203877120000CD0A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F4519419203877310000CD0A /* Strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
+		F451941F20395ECE0000CD0A /* AdapterPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdapterPattern; sourceTree = BUILT_PRODUCTS_DIR; };
+		F451942120395ECE0000CD0A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F451942620395EE50000CD0A /* Employees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employees.swift; sourceTree = "<group>"; };
+		F451942820395EF60000CD0A /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		F451942A203962270000CD0A /* EmployeeSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeSearch.swift; sourceTree = "<group>"; };
+		F451942C203965540000CD0A /* NewCo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCo.swift; sourceTree = "<group>"; };
+		F451942E203966C60000CD0A /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		F490B49F2031DFB2006D3D44 /* Design-Pattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Design-Pattern"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F490B4A22031DFB2006D3D44 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F490B4AD2031DFFE006D3D44 /* ObjectPoolPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectPoolPattern; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +104,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F451940F203877120000CD0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F451941C20395ECE0000CD0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -127,6 +156,19 @@
 			path = Strategy;
 			sourceTree = "<group>";
 		};
+		F451942020395ECE0000CD0A /* AdapterPattern */ = {
+			isa = PBXGroup;
+			children = (
+				F451942120395ECE0000CD0A /* main.swift */,
+				F451942620395EE50000CD0A /* Employees.swift */,
+				F451942820395EF60000CD0A /* DataSource.swift */,
+				F451942A203962270000CD0A /* EmployeeSearch.swift */,
+				F451942C203965540000CD0A /* NewCo.swift */,
+				F451942E203966C60000CD0A /* Adapter.swift */,
+			);
+			path = AdapterPattern;
+			sourceTree = "<group>";
+		};
 		F490B4962031DFB2006D3D44 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +176,7 @@
 				F490B4AE2031DFFE006D3D44 /* ObjectPoolPattern */,
 				F45193FD203860440000CD0A /* App */,
 				F4519413203877120000CD0A /* Strategy */,
+				F451942020395ECE0000CD0A /* AdapterPattern */,
 				F490B4A02031DFB2006D3D44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -145,6 +188,7 @@
 				F490B4AD2031DFFE006D3D44 /* ObjectPoolPattern */,
 				F45193FC203860440000CD0A /* App.app */,
 				F4519412203877120000CD0A /* Strategy */,
+				F451941F20395ECE0000CD0A /* AdapterPattern */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,6 +250,23 @@
 			productReference = F4519412203877120000CD0A /* Strategy */;
 			productType = "com.apple.product-type.tool";
 		};
+		F451941E20395ECE0000CD0A /* AdapterPattern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F451942320395ECE0000CD0A /* Build configuration list for PBXNativeTarget "AdapterPattern" */;
+			buildPhases = (
+				F451941B20395ECE0000CD0A /* Sources */,
+				F451941C20395ECE0000CD0A /* Frameworks */,
+				F451941D20395ECE0000CD0A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdapterPattern;
+			productName = AdapterPattern;
+			productReference = F451941F20395ECE0000CD0A /* AdapterPattern */;
+			productType = "com.apple.product-type.tool";
+		};
 		F490B49E2031DFB2006D3D44 /* Design-Pattern */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F490B4A62031DFB2006D3D44 /* Build configuration list for PBXNativeTarget "Design-Pattern" */;
@@ -258,6 +319,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					F451941E20395ECE0000CD0A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					F490B49E2031DFB2006D3D44 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -285,6 +350,7 @@
 				F490B4AC2031DFFE006D3D44 /* ObjectPoolPattern */,
 				F45193FB203860440000CD0A /* App */,
 				F4519411203877120000CD0A /* Strategy */,
+				F451941E20395ECE0000CD0A /* AdapterPattern */,
 			);
 		};
 /* End PBXProject section */
@@ -318,6 +384,19 @@
 			files = (
 				F4519415203877120000CD0A /* main.swift in Sources */,
 				F451941A203877310000CD0A /* Strategy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F451941B20395ECE0000CD0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F451942920395EF70000CD0A /* DataSource.swift in Sources */,
+				F451942F203966C60000CD0A /* Adapter.swift in Sources */,
+				F451942B203962270000CD0A /* EmployeeSearch.swift in Sources */,
+				F451942220395ECE0000CD0A /* main.swift in Sources */,
+				F451942D203965540000CD0A /* NewCo.swift in Sources */,
+				F451942720395EE50000CD0A /* Employees.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +490,26 @@
 			name = Debug;
 		};
 		F4519418203877120000CD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		F451942420395ECE0000CD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F451942520395ECE0000CD0A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -583,6 +682,15 @@
 			buildConfigurations = (
 				F4519417203877120000CD0A /* Debug */,
 				F4519418203877120000CD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F451942320395ECE0000CD0A /* Build configuration list for PBXNativeTarget "AdapterPattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F451942420395ECE0000CD0A /* Debug */,
+				F451942520395ECE0000CD0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
