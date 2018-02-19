@@ -21,6 +21,17 @@
 		F451942B203962270000CD0A /* EmployeeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451942A203962270000CD0A /* EmployeeSearch.swift */; };
 		F451942D203965540000CD0A /* NewCo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451942C203965540000CD0A /* NewCo.swift */; };
 		F451942F203966C60000CD0A /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451942E203966C60000CD0A /* Adapter.swift */; };
+		F45194372039AB3C0000CD0A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45194362039AB3C0000CD0A /* main.swift */; };
+		F451943C2039AB800000CD0A /* Comms.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451943B2039AB800000CD0A /* Comms.swift */; };
+		F451943E2039AC670000CD0A /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451943D2039AC670000CD0A /* Channels.swift */; };
+		F45194402039ADF60000CD0A /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451943F2039ADF60000CD0A /* Messages.swift */; };
+		F45194422039B0920000CD0A /* Bridges.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45194412039B0920000CD0A /* Bridges.swift */; };
+		F45194442039B2CE0000CD0A /* NewFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45194432039B2CE0000CD0A /* NewFeatures.swift */; };
+		F451944C203A513E0000CD0A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451944B203A513E0000CD0A /* main.swift */; };
+		F4519451203A51630000CD0A /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4519450203A51630000CD0A /* Purchase.swift */; };
+		F4519453203A52440000CD0A /* CustomerAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4519452203A52440000CD0A /* CustomerAccount.swift */; };
+		F4519455203A547E0000CD0A /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4519454203A547E0000CD0A /* Options.swift */; };
+		F4519457203A5DB30000CD0A /* DiscountDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4519456203A5DB30000CD0A /* DiscountDecorator.swift */; };
 		F490B4A32031DFB2006D3D44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490B4A22031DFB2006D3D44 /* main.swift */; };
 		F490B4B02031DFFE006D3D44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490B4AF2031DFFE006D3D44 /* main.swift */; };
 		F490B4B52031E017006D3D44 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490B4B42031E017006D3D44 /* Book.swift */; };
@@ -39,6 +50,24 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		F451941D20395ECE0000CD0A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F45194322039AB3C0000CD0A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F4519447203A513E0000CD0A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -86,6 +115,19 @@
 		F451942A203962270000CD0A /* EmployeeSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeSearch.swift; sourceTree = "<group>"; };
 		F451942C203965540000CD0A /* NewCo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCo.swift; sourceTree = "<group>"; };
 		F451942E203966C60000CD0A /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		F45194342039AB3C0000CD0A /* BridgePattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BridgePattern; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45194362039AB3C0000CD0A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F451943B2039AB800000CD0A /* Comms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comms.swift; sourceTree = "<group>"; };
+		F451943D2039AC670000CD0A /* Channels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channels.swift; sourceTree = "<group>"; };
+		F451943F2039ADF60000CD0A /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		F45194412039B0920000CD0A /* Bridges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridges.swift; sourceTree = "<group>"; };
+		F45194432039B2CE0000CD0A /* NewFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeatures.swift; sourceTree = "<group>"; };
+		F4519449203A513E0000CD0A /* DecoratorPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DecoratorPattern; sourceTree = BUILT_PRODUCTS_DIR; };
+		F451944B203A513E0000CD0A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F4519450203A51630000CD0A /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
+		F4519452203A52440000CD0A /* CustomerAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerAccount.swift; sourceTree = "<group>"; };
+		F4519454203A547E0000CD0A /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		F4519456203A5DB30000CD0A /* DiscountDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountDecorator.swift; sourceTree = "<group>"; };
 		F490B49F2031DFB2006D3D44 /* Design-Pattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Design-Pattern"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F490B4A22031DFB2006D3D44 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F490B4AD2031DFFE006D3D44 /* ObjectPoolPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectPoolPattern; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +153,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F451941C20395ECE0000CD0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45194312039AB3C0000CD0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4519446203A513E0000CD0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -169,6 +225,31 @@
 			path = AdapterPattern;
 			sourceTree = "<group>";
 		};
+		F45194352039AB3C0000CD0A /* BridgePattern */ = {
+			isa = PBXGroup;
+			children = (
+				F45194362039AB3C0000CD0A /* main.swift */,
+				F451943B2039AB800000CD0A /* Comms.swift */,
+				F451943D2039AC670000CD0A /* Channels.swift */,
+				F451943F2039ADF60000CD0A /* Messages.swift */,
+				F45194412039B0920000CD0A /* Bridges.swift */,
+				F45194432039B2CE0000CD0A /* NewFeatures.swift */,
+			);
+			path = BridgePattern;
+			sourceTree = "<group>";
+		};
+		F451944A203A513E0000CD0A /* DecoratorPattern */ = {
+			isa = PBXGroup;
+			children = (
+				F451944B203A513E0000CD0A /* main.swift */,
+				F4519456203A5DB30000CD0A /* DiscountDecorator.swift */,
+				F4519450203A51630000CD0A /* Purchase.swift */,
+				F4519452203A52440000CD0A /* CustomerAccount.swift */,
+				F4519454203A547E0000CD0A /* Options.swift */,
+			);
+			path = DecoratorPattern;
+			sourceTree = "<group>";
+		};
 		F490B4962031DFB2006D3D44 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +258,8 @@
 				F45193FD203860440000CD0A /* App */,
 				F4519413203877120000CD0A /* Strategy */,
 				F451942020395ECE0000CD0A /* AdapterPattern */,
+				F45194352039AB3C0000CD0A /* BridgePattern */,
+				F451944A203A513E0000CD0A /* DecoratorPattern */,
 				F490B4A02031DFB2006D3D44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -189,6 +272,8 @@
 				F45193FC203860440000CD0A /* App.app */,
 				F4519412203877120000CD0A /* Strategy */,
 				F451941F20395ECE0000CD0A /* AdapterPattern */,
+				F45194342039AB3C0000CD0A /* BridgePattern */,
+				F4519449203A513E0000CD0A /* DecoratorPattern */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,6 +352,40 @@
 			productReference = F451941F20395ECE0000CD0A /* AdapterPattern */;
 			productType = "com.apple.product-type.tool";
 		};
+		F45194332039AB3C0000CD0A /* BridgePattern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45194382039AB3C0000CD0A /* Build configuration list for PBXNativeTarget "BridgePattern" */;
+			buildPhases = (
+				F45194302039AB3C0000CD0A /* Sources */,
+				F45194312039AB3C0000CD0A /* Frameworks */,
+				F45194322039AB3C0000CD0A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BridgePattern;
+			productName = BridgePattern;
+			productReference = F45194342039AB3C0000CD0A /* BridgePattern */;
+			productType = "com.apple.product-type.tool";
+		};
+		F4519448203A513E0000CD0A /* DecoratorPattern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F451944D203A513E0000CD0A /* Build configuration list for PBXNativeTarget "DecoratorPattern" */;
+			buildPhases = (
+				F4519445203A513E0000CD0A /* Sources */,
+				F4519446203A513E0000CD0A /* Frameworks */,
+				F4519447203A513E0000CD0A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DecoratorPattern;
+			productName = DecoratorPattern;
+			productReference = F4519449203A513E0000CD0A /* DecoratorPattern */;
+			productType = "com.apple.product-type.tool";
+		};
 		F490B49E2031DFB2006D3D44 /* Design-Pattern */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F490B4A62031DFB2006D3D44 /* Build configuration list for PBXNativeTarget "Design-Pattern" */;
@@ -323,6 +442,14 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					F45194332039AB3C0000CD0A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F4519448203A513E0000CD0A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					F490B49E2031DFB2006D3D44 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -351,6 +478,8 @@
 				F45193FB203860440000CD0A /* App */,
 				F4519411203877120000CD0A /* Strategy */,
 				F451941E20395ECE0000CD0A /* AdapterPattern */,
+				F45194332039AB3C0000CD0A /* BridgePattern */,
+				F4519448203A513E0000CD0A /* DecoratorPattern */,
 			);
 		};
 /* End PBXProject section */
@@ -397,6 +526,31 @@
 				F451942220395ECE0000CD0A /* main.swift in Sources */,
 				F451942D203965540000CD0A /* NewCo.swift in Sources */,
 				F451942720395EE50000CD0A /* Employees.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45194302039AB3C0000CD0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F451943E2039AC670000CD0A /* Channels.swift in Sources */,
+				F45194402039ADF60000CD0A /* Messages.swift in Sources */,
+				F45194422039B0920000CD0A /* Bridges.swift in Sources */,
+				F45194372039AB3C0000CD0A /* main.swift in Sources */,
+				F451943C2039AB800000CD0A /* Comms.swift in Sources */,
+				F45194442039B2CE0000CD0A /* NewFeatures.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4519445203A513E0000CD0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4519455203A547E0000CD0A /* Options.swift in Sources */,
+				F4519451203A51630000CD0A /* Purchase.swift in Sources */,
+				F451944C203A513E0000CD0A /* main.swift in Sources */,
+				F4519457203A5DB30000CD0A /* DiscountDecorator.swift in Sources */,
+				F4519453203A52440000CD0A /* CustomerAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +664,46 @@
 			name = Debug;
 		};
 		F451942520395ECE0000CD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		F45194392039AB3C0000CD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F451943A2039AB3C0000CD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		F451944E203A513E0000CD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F451944F203A513E0000CD0A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -691,6 +885,24 @@
 			buildConfigurations = (
 				F451942420395ECE0000CD0A /* Debug */,
 				F451942520395ECE0000CD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F45194382039AB3C0000CD0A /* Build configuration list for PBXNativeTarget "BridgePattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45194392039AB3C0000CD0A /* Debug */,
+				F451943A2039AB3C0000CD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F451944D203A513E0000CD0A /* Build configuration list for PBXNativeTarget "DecoratorPattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F451944E203A513E0000CD0A /* Debug */,
+				F451944F203A513E0000CD0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
