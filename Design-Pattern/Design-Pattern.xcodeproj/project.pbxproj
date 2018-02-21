@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41E5B48203D497000A47B09 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E5B47203D497000A47B09 /* main.swift */; };
+		F41E5B4D203D498300A47B09 /* TreasureMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E5B4C203D498300A47B09 /* TreasureMap.swift */; };
+		F41E5B4F203D4A7A00A47B09 /* PirateShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E5B4E203D4A7A00A47B09 /* PirateShip.swift */; };
+		F41E5B51203D4BA700A47B09 /* PirateCrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E5B50203D4BA700A47B09 /* PirateCrew.swift */; };
+		F41E5B53203D4CE000A47B09 /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E5B52203D4CE000A47B09 /* Facade.swift */; };
 		F45193F7203291140000CD0A /* SportsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45193F6203291140000CD0A /* SportsStore.swift */; };
 		F45193FF203860440000CD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45193FE203860440000CD0A /* AppDelegate.swift */; };
 		F4519401203860440000CD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4519400203860440000CD0A /* ViewController.swift */; };
@@ -40,6 +45,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		F41E5B43203D497000A47B09 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		F4519410203877120000CD0A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,6 +111,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F41E5B45203D497000A47B09 /* Facade */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Facade; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41E5B47203D497000A47B09 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F41E5B4C203D498300A47B09 /* TreasureMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureMap.swift; sourceTree = "<group>"; };
+		F41E5B4E203D4A7A00A47B09 /* PirateShip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirateShip.swift; sourceTree = "<group>"; };
+		F41E5B50203D4BA700A47B09 /* PirateCrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirateCrew.swift; sourceTree = "<group>"; };
+		F41E5B52203D4CE000A47B09 /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
 		F45193F6203291140000CD0A /* SportsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsStore.swift; sourceTree = "<group>"; };
 		F45193FC203860440000CD0A /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45193FE203860440000CD0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +158,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F41E5B42203D497000A47B09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F45193F9203860440000CD0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,6 +217,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F41E5B46203D497000A47B09 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				F41E5B47203D497000A47B09 /* main.swift */,
+				F41E5B4C203D498300A47B09 /* TreasureMap.swift */,
+				F41E5B4E203D4A7A00A47B09 /* PirateShip.swift */,
+				F41E5B50203D4BA700A47B09 /* PirateCrew.swift */,
+				F41E5B52203D4CE000A47B09 /* Facade.swift */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
 		F45193FD203860440000CD0A /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +299,7 @@
 				F451942020395ECE0000CD0A /* AdapterPattern */,
 				F45194352039AB3C0000CD0A /* BridgePattern */,
 				F451944A203A513E0000CD0A /* DecoratorPattern */,
+				F41E5B46203D497000A47B09 /* Facade */,
 				F490B4A02031DFB2006D3D44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -274,6 +314,7 @@
 				F451941F20395ECE0000CD0A /* AdapterPattern */,
 				F45194342039AB3C0000CD0A /* BridgePattern */,
 				F4519449203A513E0000CD0A /* DecoratorPattern */,
+				F41E5B45203D497000A47B09 /* Facade */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -301,6 +342,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F41E5B44203D497000A47B09 /* Facade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F41E5B4B203D497000A47B09 /* Build configuration list for PBXNativeTarget "Facade" */;
+			buildPhases = (
+				F41E5B41203D497000A47B09 /* Sources */,
+				F41E5B42203D497000A47B09 /* Frameworks */,
+				F41E5B43203D497000A47B09 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Facade;
+			productName = Facade;
+			productReference = F41E5B45203D497000A47B09 /* Facade */;
+			productType = "com.apple.product-type.tool";
+		};
 		F45193FB203860440000CD0A /* App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F451940B203860440000CD0A /* Build configuration list for PBXNativeTarget "App" */;
@@ -430,6 +488,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Pszertlek;
 				TargetAttributes = {
+					F41E5B44203D497000A47B09 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					F45193FB203860440000CD0A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -480,6 +542,7 @@
 				F451941E20395ECE0000CD0A /* AdapterPattern */,
 				F45194332039AB3C0000CD0A /* BridgePattern */,
 				F4519448203A513E0000CD0A /* DecoratorPattern */,
+				F41E5B44203D497000A47B09 /* Facade */,
 			);
 		};
 /* End PBXProject section */
@@ -498,6 +561,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F41E5B41203D497000A47B09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41E5B48203D497000A47B09 /* main.swift in Sources */,
+				F41E5B53203D4CE000A47B09 /* Facade.swift in Sources */,
+				F41E5B51203D4BA700A47B09 /* PirateCrew.swift in Sources */,
+				F41E5B4D203D498300A47B09 /* TreasureMap.swift in Sources */,
+				F41E5B4F203D4A7A00A47B09 /* PirateShip.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F45193F8203860440000CD0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -596,6 +671,26 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F41E5B49203D497000A47B09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F41E5B4A203D497000A47B09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		F451940C203860440000CD0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -862,6 +957,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F41E5B4B203D497000A47B09 /* Build configuration list for PBXNativeTarget "Facade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41E5B49203D497000A47B09 /* Debug */,
+				F41E5B4A203D497000A47B09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F451940B203860440000CD0A /* Build configuration list for PBXNativeTarget "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
