@@ -12,6 +12,10 @@
 		F41E5B4F203D4A7A00A47B09 /* PirateShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E5B4E203D4A7A00A47B09 /* PirateShip.swift */; };
 		F41E5B51203D4BA700A47B09 /* PirateCrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E5B50203D4BA700A47B09 /* PirateCrew.swift */; };
 		F41E5B53203D4CE000A47B09 /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E5B52203D4CE000A47B09 /* Facade.swift */; };
+		F41E5B5B203DD40300A47B09 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E5B5A203DD40300A47B09 /* main.swift */; };
+		F41E5B60203DD42E00A47B09 /* Spreadsheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E5B5F203DD42E00A47B09 /* Spreadsheet.swift */; };
+		F41E5B62203DD8A100A47B09 /* Flyweights.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E5B61203DD8A100A47B09 /* Flyweights.swift */; };
+		F41E5B64203DDEF900A47B09 /* FlyweightFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E5B63203DDEF900A47B09 /* FlyweightFactory.swift */; };
 		F45193F7203291140000CD0A /* SportsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45193F6203291140000CD0A /* SportsStore.swift */; };
 		F45193FF203860440000CD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45193FE203860440000CD0A /* AppDelegate.swift */; };
 		F4519401203860440000CD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4519400203860440000CD0A /* ViewController.swift */; };
@@ -46,6 +50,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F41E5B43203D497000A47B09 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F41E5B56203DD40300A47B09 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -117,6 +130,11 @@
 		F41E5B4E203D4A7A00A47B09 /* PirateShip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirateShip.swift; sourceTree = "<group>"; };
 		F41E5B50203D4BA700A47B09 /* PirateCrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirateCrew.swift; sourceTree = "<group>"; };
 		F41E5B52203D4CE000A47B09 /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
+		F41E5B58203DD40300A47B09 /* Flyweight */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Flyweight; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41E5B5A203DD40300A47B09 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F41E5B5F203DD42E00A47B09 /* Spreadsheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spreadsheet.swift; sourceTree = "<group>"; };
+		F41E5B61203DD8A100A47B09 /* Flyweights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyweights.swift; sourceTree = "<group>"; };
+		F41E5B63203DDEF900A47B09 /* FlyweightFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightFactory.swift; sourceTree = "<group>"; };
 		F45193F6203291140000CD0A /* SportsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsStore.swift; sourceTree = "<group>"; };
 		F45193FC203860440000CD0A /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45193FE203860440000CD0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +177,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		F41E5B42203D497000A47B09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F41E5B55203DD40300A47B09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,6 +252,17 @@
 				F41E5B52203D4CE000A47B09 /* Facade.swift */,
 			);
 			path = Facade;
+			sourceTree = "<group>";
+		};
+		F41E5B59203DD40300A47B09 /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				F41E5B5A203DD40300A47B09 /* main.swift */,
+				F41E5B5F203DD42E00A47B09 /* Spreadsheet.swift */,
+				F41E5B61203DD8A100A47B09 /* Flyweights.swift */,
+				F41E5B63203DDEF900A47B09 /* FlyweightFactory.swift */,
+			);
+			path = Flyweight;
 			sourceTree = "<group>";
 		};
 		F45193FD203860440000CD0A /* App */ = {
@@ -300,6 +336,7 @@
 				F45194352039AB3C0000CD0A /* BridgePattern */,
 				F451944A203A513E0000CD0A /* DecoratorPattern */,
 				F41E5B46203D497000A47B09 /* Facade */,
+				F41E5B59203DD40300A47B09 /* Flyweight */,
 				F490B4A02031DFB2006D3D44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -315,6 +352,7 @@
 				F45194342039AB3C0000CD0A /* BridgePattern */,
 				F4519449203A513E0000CD0A /* DecoratorPattern */,
 				F41E5B45203D497000A47B09 /* Facade */,
+				F41E5B58203DD40300A47B09 /* Flyweight */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,6 +395,23 @@
 			name = Facade;
 			productName = Facade;
 			productReference = F41E5B45203D497000A47B09 /* Facade */;
+			productType = "com.apple.product-type.tool";
+		};
+		F41E5B57203DD40300A47B09 /* Flyweight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F41E5B5E203DD40300A47B09 /* Build configuration list for PBXNativeTarget "Flyweight" */;
+			buildPhases = (
+				F41E5B54203DD40300A47B09 /* Sources */,
+				F41E5B55203DD40300A47B09 /* Frameworks */,
+				F41E5B56203DD40300A47B09 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flyweight;
+			productName = Flyweight;
+			productReference = F41E5B58203DD40300A47B09 /* Flyweight */;
 			productType = "com.apple.product-type.tool";
 		};
 		F45193FB203860440000CD0A /* App */ = {
@@ -492,6 +547,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					F41E5B57203DD40300A47B09 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					F45193FB203860440000CD0A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -543,6 +602,7 @@
 				F45194332039AB3C0000CD0A /* BridgePattern */,
 				F4519448203A513E0000CD0A /* DecoratorPattern */,
 				F41E5B44203D497000A47B09 /* Facade */,
+				F41E5B57203DD40300A47B09 /* Flyweight */,
 			);
 		};
 /* End PBXProject section */
@@ -570,6 +630,17 @@
 				F41E5B51203D4BA700A47B09 /* PirateCrew.swift in Sources */,
 				F41E5B4D203D498300A47B09 /* TreasureMap.swift in Sources */,
 				F41E5B4F203D4A7A00A47B09 /* PirateShip.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F41E5B54203DD40300A47B09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41E5B64203DDEF900A47B09 /* FlyweightFactory.swift in Sources */,
+				F41E5B62203DD8A100A47B09 /* Flyweights.swift in Sources */,
+				F41E5B60203DD42E00A47B09 /* Spreadsheet.swift in Sources */,
+				F41E5B5B203DD40300A47B09 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,6 +753,26 @@
 			name = Debug;
 		};
 		F41E5B4A203D497000A47B09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		F41E5B5C203DD40300A47B09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F41E5B5D203DD40300A47B09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -962,6 +1053,15 @@
 			buildConfigurations = (
 				F41E5B49203D497000A47B09 /* Debug */,
 				F41E5B4A203D497000A47B09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F41E5B5E203DD40300A47B09 /* Build configuration list for PBXNativeTarget "Flyweight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41E5B5C203DD40300A47B09 /* Debug */,
+				F41E5B5D203DD40300A47B09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
