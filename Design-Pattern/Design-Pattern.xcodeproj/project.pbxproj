@@ -23,6 +23,10 @@
 		F41FEABF203EF35A000AF6A4 /* Transmitters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FEABE203EF35A000AF6A4 /* Transmitters.swift */; };
 		F41FEAC72045B187000AF6A4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FEAC62045B187000AF6A4 /* main.swift */; };
 		F41FEACC2045B1A3000AF6A4 /* Donors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FEACB2045B1A3000AF6A4 /* Donors.swift */; };
+		F429515F204ECF3E006D4C44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429515E204ECF3E006D4C44 /* main.swift */; };
+		F4295164204ED154006D4C44 /* RentalCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4295163204ED154006D4C44 /* RentalCar.swift */; };
+		F4295166204ED172006D4C44 /* CarSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4295165204ED172006D4C44 /* CarSelector.swift */; };
+		F4295168204ED1A6006D4C44 /* PriceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4295167204ED1A6006D4C44 /* PriceCalculator.swift */; };
 		F45193F7203291140000CD0A /* SportsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45193F6203291140000CD0A /* SportsStore.swift */; };
 		F45193FF203860440000CD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45193FE203860440000CD0A /* AppDelegate.swift */; };
 		F4519401203860440000CD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4519400203860440000CD0A /* ViewController.swift */; };
@@ -93,6 +97,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		F41FEAC22045B187000AF6A4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F429515A204ECF3E006D4C44 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -179,6 +192,11 @@
 		F41FEAC42045B187000AF6A4 /* Template */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Template; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41FEAC62045B187000AF6A4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F41FEACB2045B1A3000AF6A4 /* Donors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donors.swift; sourceTree = "<group>"; };
+		F429515C204ECF3E006D4C44 /* FactoryMethod */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FactoryMethod; sourceTree = BUILT_PRODUCTS_DIR; };
+		F429515E204ECF3E006D4C44 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F4295163204ED154006D4C44 /* RentalCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalCar.swift; sourceTree = "<group>"; };
+		F4295165204ED172006D4C44 /* CarSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelector.swift; sourceTree = "<group>"; };
+		F4295167204ED1A6006D4C44 /* PriceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCalculator.swift; sourceTree = "<group>"; };
 		F45193F6203291140000CD0A /* SportsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsStore.swift; sourceTree = "<group>"; };
 		F45193FC203860440000CD0A /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45193FE203860440000CD0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +267,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F41FEAC12045B187000AF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4295159204ECF3E006D4C44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -358,6 +383,17 @@
 			path = Template;
 			sourceTree = "<group>";
 		};
+		F429515D204ECF3E006D4C44 /* FactoryMethod */ = {
+			isa = PBXGroup;
+			children = (
+				F429515E204ECF3E006D4C44 /* main.swift */,
+				F4295163204ED154006D4C44 /* RentalCar.swift */,
+				F4295167204ED1A6006D4C44 /* PriceCalculator.swift */,
+				F4295165204ED172006D4C44 /* CarSelector.swift */,
+			);
+			path = FactoryMethod;
+			sourceTree = "<group>";
+		};
 		F45193FD203860440000CD0A /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +469,7 @@
 				F41FEAA9203E951B000AF6A4 /* Proxy */,
 				F41FEAB6203EF2FD000AF6A4 /* ChainOfResp */,
 				F41FEAC52045B187000AF6A4 /* Template */,
+				F429515D204ECF3E006D4C44 /* FactoryMethod */,
 				F490B4A02031DFB2006D3D44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -452,6 +489,7 @@
 				F41FEAA8203E951B000AF6A4 /* Proxy */,
 				F41FEAB5203EF2FD000AF6A4 /* ChainOfResp */,
 				F41FEAC42045B187000AF6A4 /* Template */,
+				F429515C204ECF3E006D4C44 /* FactoryMethod */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -562,6 +600,23 @@
 			name = Template;
 			productName = Template;
 			productReference = F41FEAC42045B187000AF6A4 /* Template */;
+			productType = "com.apple.product-type.tool";
+		};
+		F429515B204ECF3E006D4C44 /* FactoryMethod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4295162204ECF3E006D4C44 /* Build configuration list for PBXNativeTarget "FactoryMethod" */;
+			buildPhases = (
+				F4295158204ECF3E006D4C44 /* Sources */,
+				F4295159204ECF3E006D4C44 /* Frameworks */,
+				F429515A204ECF3E006D4C44 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FactoryMethod;
+			productName = FactoryMethod;
+			productReference = F429515C204ECF3E006D4C44 /* FactoryMethod */;
 			productType = "com.apple.product-type.tool";
 		};
 		F45193FB203860440000CD0A /* App */ = {
@@ -713,6 +768,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					F429515B204ECF3E006D4C44 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					F45193FB203860440000CD0A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -768,6 +827,7 @@
 				F41FEAA7203E951B000AF6A4 /* Proxy */,
 				F41FEAB4203EF2FD000AF6A4 /* ChainOfResp */,
 				F41FEAC32045B187000AF6A4 /* Template */,
+				F429515B204ECF3E006D4C44 /* FactoryMethod */,
 			);
 		};
 /* End PBXProject section */
@@ -834,6 +894,17 @@
 			files = (
 				F41FEACC2045B1A3000AF6A4 /* Donors.swift in Sources */,
 				F41FEAC72045B187000AF6A4 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4295158204ECF3E006D4C44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4295164204ED154006D4C44 /* RentalCar.swift in Sources */,
+				F4295168204ED1A6006D4C44 /* PriceCalculator.swift in Sources */,
+				F429515F204ECF3E006D4C44 /* main.swift in Sources */,
+				F4295166204ED172006D4C44 /* CarSelector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1026,6 +1097,26 @@
 			name = Debug;
 		};
 		F41FEACA2045B187000AF6A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		F4295160204ECF3E006D4C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F4295161204ECF3E006D4C44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1342,6 +1433,15 @@
 			buildConfigurations = (
 				F41FEAC92045B187000AF6A4 /* Debug */,
 				F41FEACA2045B187000AF6A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4295162204ECF3E006D4C44 /* Build configuration list for PBXNativeTarget "FactoryMethod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4295160204ECF3E006D4C44 /* Debug */,
+				F4295161204ECF3E006D4C44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
