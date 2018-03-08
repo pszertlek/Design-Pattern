@@ -27,6 +27,13 @@
 		F4295164204ED154006D4C44 /* RentalCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4295163204ED154006D4C44 /* RentalCar.swift */; };
 		F4295166204ED172006D4C44 /* CarSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4295165204ED172006D4C44 /* CarSelector.swift */; };
 		F4295168204ED1A6006D4C44 /* PriceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4295167204ED1A6006D4C44 /* PriceCalculator.swift */; };
+		F4295170204EE2B3006D4C44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429516F204EE2B3006D4C44 /* main.swift */; };
+		F4295175204EE2C7006D4C44 /* FloorPlans.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4295174204EE2C7006D4C44 /* FloorPlans.swift */; };
+		F4295177204EE3C8006D4C44 /* Suspension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4295176204EE3C8006D4C44 /* Suspension.swift */; };
+		F4295179204EE48E006D4C44 /* Drivetains.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4295178204EE48E006D4C44 /* Drivetains.swift */; };
+		F429517B204EE51D006D4C44 /* CarsParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429517A204EE51D006D4C44 /* CarsParts.swift */; };
+		F429517D204EE66A006D4C44 /* Abstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429517C204EE66A006D4C44 /* Abstract.swift */; };
+		F429517F204EE6C4006D4C44 /* Concrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429517E204EE6C4006D4C44 /* Concrete.swift */; };
 		F45193F7203291140000CD0A /* SportsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45193F6203291140000CD0A /* SportsStore.swift */; };
 		F45193FF203860440000CD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45193FE203860440000CD0A /* AppDelegate.swift */; };
 		F4519401203860440000CD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4519400203860440000CD0A /* ViewController.swift */; };
@@ -106,6 +113,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		F429515A204ECF3E006D4C44 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F429516B204EE2B2006D4C44 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -197,6 +213,14 @@
 		F4295163204ED154006D4C44 /* RentalCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalCar.swift; sourceTree = "<group>"; };
 		F4295165204ED172006D4C44 /* CarSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSelector.swift; sourceTree = "<group>"; };
 		F4295167204ED1A6006D4C44 /* PriceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCalculator.swift; sourceTree = "<group>"; };
+		F429516D204EE2B2006D4C44 /* AbstractFactoryPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AbstractFactoryPattern; sourceTree = BUILT_PRODUCTS_DIR; };
+		F429516F204EE2B3006D4C44 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F4295174204EE2C7006D4C44 /* FloorPlans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorPlans.swift; sourceTree = "<group>"; };
+		F4295176204EE3C8006D4C44 /* Suspension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suspension.swift; sourceTree = "<group>"; };
+		F4295178204EE48E006D4C44 /* Drivetains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drivetains.swift; sourceTree = "<group>"; };
+		F429517A204EE51D006D4C44 /* CarsParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsParts.swift; sourceTree = "<group>"; };
+		F429517C204EE66A006D4C44 /* Abstract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abstract.swift; sourceTree = "<group>"; };
+		F429517E204EE6C4006D4C44 /* Concrete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concrete.swift; sourceTree = "<group>"; };
 		F45193F6203291140000CD0A /* SportsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsStore.swift; sourceTree = "<group>"; };
 		F45193FC203860440000CD0A /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45193FE203860440000CD0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -274,6 +298,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F4295159204ECF3E006D4C44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F429516A204EE2B2006D4C44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -394,6 +425,20 @@
 			path = FactoryMethod;
 			sourceTree = "<group>";
 		};
+		F429516E204EE2B3006D4C44 /* AbstractFactoryPattern */ = {
+			isa = PBXGroup;
+			children = (
+				F429516F204EE2B3006D4C44 /* main.swift */,
+				F4295174204EE2C7006D4C44 /* FloorPlans.swift */,
+				F4295176204EE3C8006D4C44 /* Suspension.swift */,
+				F4295178204EE48E006D4C44 /* Drivetains.swift */,
+				F429517A204EE51D006D4C44 /* CarsParts.swift */,
+				F429517C204EE66A006D4C44 /* Abstract.swift */,
+				F429517E204EE6C4006D4C44 /* Concrete.swift */,
+			);
+			path = AbstractFactoryPattern;
+			sourceTree = "<group>";
+		};
 		F45193FD203860440000CD0A /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,6 +515,7 @@
 				F41FEAB6203EF2FD000AF6A4 /* ChainOfResp */,
 				F41FEAC52045B187000AF6A4 /* Template */,
 				F429515D204ECF3E006D4C44 /* FactoryMethod */,
+				F429516E204EE2B3006D4C44 /* AbstractFactoryPattern */,
 				F490B4A02031DFB2006D3D44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -490,6 +536,7 @@
 				F41FEAB5203EF2FD000AF6A4 /* ChainOfResp */,
 				F41FEAC42045B187000AF6A4 /* Template */,
 				F429515C204ECF3E006D4C44 /* FactoryMethod */,
+				F429516D204EE2B2006D4C44 /* AbstractFactoryPattern */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -617,6 +664,23 @@
 			name = FactoryMethod;
 			productName = FactoryMethod;
 			productReference = F429515C204ECF3E006D4C44 /* FactoryMethod */;
+			productType = "com.apple.product-type.tool";
+		};
+		F429516C204EE2B2006D4C44 /* AbstractFactoryPattern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4295171204EE2B3006D4C44 /* Build configuration list for PBXNativeTarget "AbstractFactoryPattern" */;
+			buildPhases = (
+				F4295169204EE2B2006D4C44 /* Sources */,
+				F429516A204EE2B2006D4C44 /* Frameworks */,
+				F429516B204EE2B2006D4C44 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AbstractFactoryPattern;
+			productName = AbstractFactoryPattern;
+			productReference = F429516D204EE2B2006D4C44 /* AbstractFactoryPattern */;
 			productType = "com.apple.product-type.tool";
 		};
 		F45193FB203860440000CD0A /* App */ = {
@@ -772,6 +836,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					F429516C204EE2B2006D4C44 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					F45193FB203860440000CD0A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -828,6 +896,7 @@
 				F41FEAB4203EF2FD000AF6A4 /* ChainOfResp */,
 				F41FEAC32045B187000AF6A4 /* Template */,
 				F429515B204ECF3E006D4C44 /* FactoryMethod */,
+				F429516C204EE2B2006D4C44 /* AbstractFactoryPattern */,
 			);
 		};
 /* End PBXProject section */
@@ -905,6 +974,20 @@
 				F4295168204ED1A6006D4C44 /* PriceCalculator.swift in Sources */,
 				F429515F204ECF3E006D4C44 /* main.swift in Sources */,
 				F4295166204ED172006D4C44 /* CarSelector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4295169204EE2B2006D4C44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F429517B204EE51D006D4C44 /* CarsParts.swift in Sources */,
+				F4295179204EE48E006D4C44 /* Drivetains.swift in Sources */,
+				F4295170204EE2B3006D4C44 /* main.swift in Sources */,
+				F4295177204EE3C8006D4C44 /* Suspension.swift in Sources */,
+				F429517F204EE6C4006D4C44 /* Concrete.swift in Sources */,
+				F4295175204EE2C7006D4C44 /* FloorPlans.swift in Sources */,
+				F429517D204EE66A006D4C44 /* Abstract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1117,6 +1200,26 @@
 			name = Debug;
 		};
 		F4295161204ECF3E006D4C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		F4295172204EE2B3006D4C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F4295173204EE2B3006D4C44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1442,6 +1545,15 @@
 			buildConfigurations = (
 				F4295160204ECF3E006D4C44 /* Debug */,
 				F4295161204ECF3E006D4C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4295171204EE2B3006D4C44 /* Build configuration list for PBXNativeTarget "AbstractFactoryPattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4295172204EE2B3006D4C44 /* Debug */,
+				F4295173204EE2B3006D4C44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
