@@ -27,7 +27,7 @@ class MultiplyStrategy: Strategy {
 class ClosureStrategy : Strategy {
     private let closure: ([Int]) -> Int
     
-    init(_ closure: ([Int]) -> Int) {
+    init(_ closure: @escaping ([Int]) -> Int) {
         self.closure = closure
     }
     

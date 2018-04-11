@@ -14,7 +14,7 @@ protocol RentalCar {
     var pricePerDay: Float { get }
 }
 
-class Compact: RendtalCar {
+class Compact: RentalCar {
     var name = "VW Golf"
     var passengers = 3
     var pricePerDay: Float = 20
@@ -43,7 +43,7 @@ func createRentalCar(passengers: Int) -> RentalCar? {
     var car: RentalCar?
     switch passengers {
     case 0...1:
-        car = Sports
+        car = Sports()
     case 2...3:
         car = Compact()
     case 4...8:
@@ -67,8 +67,8 @@ class RentalCarClass {
         self.price = price
     }
     
-    class func createRentalCar(passengers: Int) -> RentalCarClass? {
-        var car: RentalCarClass?
+    class func createRentalCar(passengers: Int) -> RentalCar? {
+        var car: RentalCar?
         switch passengers {
         case 0...3:
             car = Compact()

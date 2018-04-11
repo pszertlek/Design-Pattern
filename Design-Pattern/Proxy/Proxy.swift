@@ -26,12 +26,12 @@ class HttpHeaderRequestProxy : HttpHeaderRequest {
                 let request = URLRequest(url: url!)
                 URLSession.shared.dataTask(with: request) { (data, response, error) in
                     if let httpResponse = response as? HTTPURLResponse {
-                        let headers = httpResponse.allHeaderFields as [String:String]
+                        let headers = httpResponse.allHeaderFields as! [String:String]
                         for (name, value) in headers {
                             self.cachedHeaders[name] = value
                         }
                          headerValue = httpResponse.allHeaderFields[header] as? String
-                        semaphore.signal()
+                        self.semaphore.signal()
                     }
                     }.resume()
                 semaphore.wait(timeout: DispatchTime.distantFuture)

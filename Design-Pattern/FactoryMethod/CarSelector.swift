@@ -25,7 +25,7 @@ class CarSelector {
 //            car = nil
 //        }
 //        return car?.name
-        return createRentalCar(passengers: passengers)
+        return createRentalCar(passengers: passengers)?.name
     }
 }
 
