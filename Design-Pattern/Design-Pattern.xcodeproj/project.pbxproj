@@ -187,6 +187,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18974C5322CAF28D00488894 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F41E5B45203D497000A47B09 /* Facade */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Facade; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41E5B47203D497000A47B09 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F41E5B4C203D498300A47B09 /* TreasureMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureMap.swift; sourceTree = "<group>"; };
@@ -502,6 +503,7 @@
 		F490B4962031DFB2006D3D44 = {
 			isa = PBXGroup;
 			children = (
+				18974C5322CAF28D00488894 /* README.md */,
 				F490B4A12031DFB2006D3D44 /* Design-Pattern */,
 				F490B4AE2031DFFE006D3D44 /* ObjectPoolPattern */,
 				F45193FD203860440000CD0A /* App */,

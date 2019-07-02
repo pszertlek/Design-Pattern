@@ -92,3 +92,22 @@ class SUVClass: RentalCarClass {
         super.init(name: "Cadillac Escalade", passengers: 8, price: 75)
     }
 }
+
+enum CarType {
+    case compact
+    case suv
+}
+
+enum CurrencyFactory {
+    static func currency(for country: CarType) -> RentalCarClass {
+        
+        var car: RentalCar?
+        switch passengers {
+        case compact:
+            car = Compact()
+        case suv:
+            car = SUV()
+        return car
+        
+    }
+}

@@ -38,3 +38,157 @@ Design-Pattern
 >.定义：一个软件实体如类、模块和函数应该对扩展开放，对修改关闭。
 1. 对测试的影响降到最低。
 2. 提高代码的复用性与维护性。接手维护的人，想要添加新的功能不需要在原有代码的基础上修改了。
+
+###### 对象创建
+1. 原型模式：
+使用原型实例制定创建对象的种类，并通过复制这个圆形创建新的对象。
+```
+//我们都知道Swift中的结构体是值传递.也就是说如果我们将某个结构体对象A赋值给对象B.
+//如果我们将A里面的属性进行改变,实际上B对象的属性并没有跟着改变.
+//这个的本质其实是B对象是另外开辟了一段内存空间.已经完完全全和A分道扬镳了.
+
+
+struct A {
+    let a: Int
+    let b: Int
+}
+
+let AA = A(a:1,b:2)
+let BB = AA
+对于struct中Class类型的，一般来说struct不建议包含类对象，因为这造成了struct的歧义，当实际需要时，可根据具体情况判断，需不需要对class 类型拷贝。
+//class 类型，可以遵循协议的方式实现
+protocol Copyable {
+    associatedtype T
+    func copy() -> T
+}
+
+class Apple: Copyable {
+    typealias T = Apple
+    func copy() -> Apple {
+        return Apple()
+    }
+}
+
+```
+2. 工厂方法：
+工厂方法也称虚构造器。定义对象的接口，让子类决定实例化哪一个类。工厂方法似的一个类的实例化延迟到子类。
+```
+//swift中可以采用两种方式构建对象，遵守协议的对象，或者基类方式
+
+protocol RentalCar {
+    var name: String { get }
+    var passengers: Int { get }
+    var pricePerDay: Float { get }
+}
+func createRentalCar(passengers: Int) -> RentalCar? {
+var car: RentalCar?
+switch passengers {
+case 0...1:
+car = Sports()
+case 2...3:
+car = Compact()
+case 4...8:
+car = SUV()
+case 9...14:
+car = Minivan()
+default:
+car = nil
+}
+return car
+}
+
+//MARK:使用基类
+class RentalCarClass {
+    private(set) var name: String
+    private(set) var passengers: Int
+    private(set) var price: Float
+    fileprivate init(name: String, passengers: Int, price: Float) {
+        self.name = name
+        self.passengers = passengers
+        self.price = price
+        }
+
+    class func createRentalCar(passengers: Int) -> RentalCar? {
+        var car: RentalCar?
+        switch passengers {
+            case 0...3:
+            car = Compact()
+            case 4...8:
+            car = SUV()
+            default:
+            car = nil
+        }
+        return car
+    }
+}
+
+基于枚举的工厂方法
+enum CarType {
+    case compact
+    case suv
+}
+
+enum CurrencyFactory {
+    static func currency(for country: CarType) -> RentalCarClass {
+    var car: RentalCar?
+    switch passengers {
+        case compact:
+        car = Compact()
+        case suv:
+        car = SUV()
+    return car
+    }
+}
+
+
+```
+
+
+3. 抽象工厂方法：
+提供一个创建一系列相关或互相依赖对象的接口，而无需指定它们具体的类。
+```
+protocol BurgerDescribing {
+    var ingredients: [String] { get }
+}
+
+struct CheeseBurger: BurgerDescribing {
+    let ingredients: [String]
+}
+
+protocol BurgerMaking {
+    func make() -> BurgerDescribing
+}
+
+// Number implementations with factory methods
+
+final class BigKahunaBurger: BurgerMaking {
+    func make() -> BurgerDescribing {
+        return CheeseBurger(ingredients: ["Cheese", "Burger", "Lettuce", "Tomato"])
+    }
+}
+
+final class JackInTheBox: BurgerMaking {
+    func make() -> BurgerDescribing {
+        return CheeseBurger(ingredients: ["Cheese", "Burger", "Tomato", "Onions"])
+    }
+}
+//Abstract factory
+
+enum BurgerFactoryType: BurgerMaking {
+
+    case bigKahuna
+    case jackInTheBox
+
+    func make() -> BurgerDescribing {
+        switch self {
+            case .bigKahuna:
+            return BigKahunaBurger().make()
+            case .jackInTheBox:
+            return JackInTheBox().make()
+        }
+    }
+}
+```
+
+4. 生成器
+5. 单例

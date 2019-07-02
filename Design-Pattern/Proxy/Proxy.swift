@@ -12,6 +12,7 @@ protocol HttpHeaderRequest {
     func getHeader(url: String, header: String) -> String?
 }
 
+
 class HttpHeaderRequestProxy : HttpHeaderRequest {
     private let semaphore = DispatchSemaphore(value: 0)
     let queue = DispatchQueue(label: "httpQ")
