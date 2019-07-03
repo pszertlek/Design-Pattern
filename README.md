@@ -190,5 +190,64 @@ enum BurgerFactoryType: BurgerMaking {
 }
 ```
 
-4. 生成器
-5. 单例
+4. 生成器:
+讲一个复杂对象的构建与他的表现分离，使得同样的构建过程可以创建不同的表现。
+```
+final class DeathStarBuilder {
+
+    var x: Double?
+    var y: Double?
+    var z: Double?
+
+    typealias BuilderClosure = (DeathStarBuilder) -> ()
+
+    init(buildClosure: BuilderClosure) {
+        buildClosure(self)
+    }
+}
+
+struct DeathStar : CustomStringConvertible {
+
+    let x: Double
+    let y: Double
+    let z: Double
+
+    init?(builder: DeathStarBuilder) {
+        if let x = builder.x, let y = builder.y, let z = builder.z {
+            self.x = x
+            self.y = y
+            self.z = z
+        } else {
+            return nil
+        }
+    }
+
+    var description:String {
+        return "Death Star at (x:\(x) y:\(y) z:\(z))"
+    }
+}
+生成器模式能帮忙构建设计不见与表现的各种组合的对象。没有这一模式，知道构建对象所需细节的类可能会变成一个庞大的类
+```
+知名的库中SnapKit中就使用了生成器模式
+5. 单例：
+定义：保证一个类仅有一个实例，并提供一个访问它的全局访问点。
+单例模式提供了一个为人熟知的访问点，供客户类共享资源生成唯一实例，并通过它对共享资源进行访问。虽然静态的全局变量对象引用或类方法也可以提供全局访问点，但是全局对象无法防止类被初始化一次以上，类方法则缺少消除耦合的灵活性。
+单例类提供穿件与访问类的唯一对象的访问点，并保证它唯一、一只而且为人熟知。
+单例模式有个变通版本，其中一个工厂总是返回统一实例，但是可以分配并初始化额外的实例。
+```
+final class ElonMusk {
+
+    static let shared = ElonMusk()
+
+    private init() {
+    // Private initialization to ensure just one instance is created.
+    }
+}
+
+class Configuration {
+    static let `default` = Configuration()
+    //单例模式有个变通版本，其中一个工厂总是返回统一实例，但是可以分配并初始化额外的实例。
+    init() {
+    }
+}
+```
