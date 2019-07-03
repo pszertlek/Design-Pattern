@@ -146,7 +146,7 @@ enum CurrencyFactory {
 
 3. 抽象工厂方法：
 提供一个创建一系列相关或互相依赖对象的接口，而无需指定它们具体的类。
-```
+````
 protocol BurgerDescribing {
     var ingredients: [String] { get }
 }
@@ -188,7 +188,7 @@ enum BurgerFactoryType: BurgerMaking {
         }
     }
 }
-```
+````
 
 4. 生成器:
 讲一个复杂对象的构建与他的表现分离，使得同样的构建过程可以创建不同的表现。
