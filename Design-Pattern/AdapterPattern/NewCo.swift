@@ -33,7 +33,7 @@ class NewCoDirectory {
                  "Greta": NewCoStaffMember.init(name: "Greta", role: "VP, Legal")]
     }
     
-    func getStaff() -> [String: NewCoStaffMember] {
+    public func getStaff() -> [String: NewCoStaffMember] {
         return staff
     }
 }

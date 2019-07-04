@@ -189,7 +189,10 @@ enum BurgerFactoryType: BurgerMaking {
     }
 }
 ````
-
+|抽象工厂|工厂方法|
+| ---- | ---- |
+|通过对象组合创建抽象产品|通过累积成创建抽象产品|
+|创建多系列产品|创建一种产品|
 ##### 4. 生成器:
 讲一个复杂对象的构建与他的表现分离，使得同样的构建过程可以创建不同的表现。
 ```
@@ -262,3 +265,72 @@ class Configuration {
     }
 }
 ```
+
+#### 接口适配
+##### 1. 适配器模式
+定义：将一个类的接口转换成客户希望的另外一个接口。适配器使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。
+|类适配器|对象适配器|
+|----|----|
+|只针对单一的具体Adaptee类，把Adapteep适配到Target|可以适配多个Adaptee及其子类|
+|易于重载Adaptee的行为，因为是同构直接的子类话进行适配|可以重载Adaptee的行为，需要借助子类对象而不是Adaptee本身|
+|只有一个Adapter对象，无需额外的指针间接访问Adapee|需要额外的指针间接访问Adapee并适配其行为|
+
+###### Adaptee
+```
+struct Employee {
+    var name: String
+    var title: String
+}
+
+protocol EmployeeDataSource {
+    var employees: [Employee] { get }
+    func search(byName name: String) -> [Employee]
+    func search(byTitle title: String) -> [Employee]
+}
+
+```
+###### Adaptor
+```
+class NewCoDirectory {
+    private var staff: [String: NewCoStaffMember]
+
+    init() {
+        staff = ["Hans": NewCoStaffMember.init(name: "Hans", role: "Corp CounSel"),
+        "Greta": NewCoStaffMember.init(name: "Greta", role: "VP, Legal")]
+    }
+
+    func getStaff() -> [String: NewCoStaffMember] {
+        return staff
+    }
+}
+
+extension NewCoDirectory: EmployeeDataSource {
+    var employees: [Employee] {
+        return getStaff().values.map({ (sv) -> Employee in
+            return Employee(name: sv.getName(), title: sv.getJob())
+        })
+    }
+
+func search(byName name: String) -> [Employee] {
+    return createEmployees(filter: { (e) -> Bool in
+        return e.getName().range(of: name) != nil
+        })
+    }
+
+func search(byTitle title: String) -> [Employee] {
+    return createEmployees(filter: { (e) -> Bool in
+        return e.getJob().range(of: title) != nil
+        })
+    }
+
+private func createEmployees(filter: ((NewCoStaffMember) -> Bool)) -> [Employee] {
+    return getStaff().values.filter(filter).map {
+        return Employee(name: $0.getName(),title: $0.getJob())
+        }
+    }
+}
+
+```
+
+##### 2. 桥接模式
+##### 3. 外观模式
