@@ -35,7 +35,8 @@ class HttpHeaderRequestProxy : HttpHeaderRequest {
                         self.semaphore.signal()
                     }
                     }.resume()
-                semaphore.wait(timeout: DispatchTime.distantFuture)
+                
+                let _ = semaphore.wait(timeout: DispatchTime.distantFuture)
 
             }
         }

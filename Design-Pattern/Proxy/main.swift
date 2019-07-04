@@ -25,4 +25,5 @@ func getHeader(header: String) {
     for header in headers {
         getHeader(header: header)
     }
-FileHandle.standardInput.availableData
+
+let _ = FileHandle.standardInput.availableData
