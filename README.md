@@ -369,3 +369,53 @@ final class VacuumCleaner: Appliance {
 }
 ```
 ##### 3. 外观模式
+定义：为系统中一组接口提供一个统一的接口。外观定义一个高层接口，让子系统更易于使用。
+###### 何时使用
+* 子系统正逐渐变得复杂。应用模式的过程演化出许多类。可以使用外观为这些子系统类提供一个较简单的接口。
+* 可以使用外观对子系统进行分层。每一个子系统级别有一个d外观作为入口点。让他们通过其外观进行通信，可以简化它们的依赖关系。
+```
+enum TreasureTypes {
+    case ship
+    case buried
+    case sunken
+}
+
+class PirateFacade {
+    private let map = TreasureMap()
+    private let ship = PirateShip()
+    private let crew = PirateCrew()
+
+    func getTreasure(type: TreasureTypes) -> Int? {
+        var prizeAmount: Int?
+        var treasureMapType: TreasureMap.Treasures
+        var crewWorkType: PirateCrew.Actions
+
+    switch type {
+        case .ship:
+        treasureMapType = TreasureMap.Treasures.gallenon
+        crewWorkType = PirateCrew.Actions.attackShip
+        case .buried:
+        treasureMapType = TreasureMap.Treasures.buriedGold
+        crewWorkType = PirateCrew.Actions.digForGold
+        case .sunken:
+        treasureMapType = TreasureMap.Treasures.sunkenJewels
+        crewWorkType = PirateCrew.Actions.diveForJewels
+    }
+    let treasureLocation = map.findTreasure(type: treasureMapType)
+    let sequence: [Character] = ["A","B","C","D","E","F","G"]
+    let eastWestPos = sequence.index(of: treasureLocation.gridLetter)
+    let shipTarget = PirateShip.ShipLocation(NorthSouth: Int(treasureLocation.gridNumber), EastWest: eastWestPos!)
+    let semaphore = DispatchSemaphore(value: 0)
+    ship.moveToLocation(location: shipTarget) { (location) in
+    self.crew.performAction(action: crewWorkType, callback: { (prize) in
+        prizeAmount = prize
+        semaphore.signal()
+        })
+        }
+
+    _ = semaphore.wait(timeout: DispatchTime.distantFuture)
+    return prizeAmount
+    }
+}
+
+```
