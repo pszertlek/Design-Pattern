@@ -333,4 +333,39 @@ private func createEmployees(filter: ((NewCoStaffMember) -> Bool)) -> [Employee]
 ```
 
 ##### 2. 桥接模式
+定义:将抽象部分与它的实现部分分离，使他们都可以独立地变化。
+```
+protocol Switch {
+    var appliance: Appliance { get set }
+    func turnOn()
+}
+
+protocol Appliance {
+    func run()
+}
+
+final class RemoteControl: Switch {
+    var appliance: Appliance
+
+    func turnOn() {
+        self.appliance.run()
+    }
+
+    init(appliance: Appliance) {
+        self.appliance = appliance
+    }   
+}
+
+final class TV: Appliance {
+    func run() {
+        print("tv turned on");
+    }
+}
+
+final class VacuumCleaner: Appliance {
+    func run() {
+        print("vacuum cleaner turned on")
+    }
+}
+```
 ##### 3. 外观模式
