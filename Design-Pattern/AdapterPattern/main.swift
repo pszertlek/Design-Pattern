@@ -10,7 +10,7 @@ import Foundation
 
 print("Hello, World!")
 
-let search = SearchTool(dataSources: [SalesDataSource(), DevelopmentDataSource(),NewCoDirectory()])
+let search = SearchTool(dataSources: [SalesDataSource(), DevelopmentDataSource()])
 
 print("--List--")
 

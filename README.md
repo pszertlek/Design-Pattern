@@ -419,3 +419,91 @@ class PirateFacade {
 }
 
 ```
+
+#### 对象去耦合
+##### 1. 中介者模式
+面向对象的设计鼓励把行为分散到不同对象中。这种分散可能导致对象之间的相互关联。在最糟糕的情况下，所有对象都彼此了解并相互操作。
+中介者模式用于定义一个集中的场所，对象之间的交互可以在一个中介者对象中处理。其他对象不必彼此交互，因此减少了它们之间的依赖关系。
+定义：用一个对象来封装一系列对象的交互方式。中介者使各对象不需要显示地相互引用。从而使其耦合松散，而且可以独立地改变它们之间的交互。
+```
+protocol Receiver {
+    associatedtype MessageType
+    func receive(message: MessageType)
+}
+
+protocol Sender {
+    associatedtype MessageType
+    associatedtype ReceiverType: Receiver
+
+    var recipients: [ReceiverType] { get }
+
+    func send(message: MessageType)
+}
+
+struct Programmer: Receiver {
+    let name: String
+
+    init(name: String) {
+        self.name = name
+    }
+
+    func receive(message: String) {
+        print("\(name) received: \(message)")
+    }
+}
+
+    final class MessageMediator: Sender {
+    internal var recipients: [Programmer] = []
+
+    func add(recipient: Programmer) {
+        recipients.append(recipient)
+    }
+
+    func send(message: String) {
+        for recipient in recipients {
+            recipient.receive(message: message)
+        }
+    }
+}
+```
+
+##### 2. 观察者模式
+定义：定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都得到通知并被自动更新。
+
+也被叫做发布-订阅模式。
+```
+protocol PropertyObserver : class {
+    func willChange(propertyName: String, newPropertyValue: Any?)
+    func didChange(propertyName: String, oldPropertyValue: Any?)
+}
+
+final class TestChambers {
+
+    weak var observer:PropertyObserver?
+
+    private let testChamberNumberName = "testChamberNumber"
+
+    var testChamberNumber: Int = 0 {
+        willSet(newValue) {
+        observer?.willChange(propertyName: testChamberNumberName, newPropertyValue: newValue)
+    }
+        didSet {
+            observer?.didChange(propertyName: testChamberNumberName, oldPropertyValue: oldValue)
+        }
+    }
+}
+
+    final class Observer : PropertyObserver {
+    func willChange(propertyName: String, newPropertyValue: Any?) {
+        if newPropertyValue as? Int == 1 {
+                print("Okay. Look. We both said a lot of things that you're going to regret.")
+        }
+    }
+
+    func didChange(propertyName: String, oldPropertyValue: Any?) {
+        if oldPropertyValue as? Int == 0 {
+            print("Sorry about the mess. I've really let the place go since you killed me.")
+            }
+        }
+    }
+```
